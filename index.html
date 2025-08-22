@@ -1,76 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>ObraApp</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ObraApp - Informações e Dicas</title>
+  <link href="blob:https://web.whatsapp.com/b50839f7-6def-4693-8be7-023773839ded" rel="stylesheet" />
   <style>
     body {
-      background-color: navy;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #001f3f;
       color: white;
-      font-family: Arial;
     }
 
     header {
-      background-color: blue;
-      padding: 10px;
+      background-color: #003366;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    nav {
-      margin-top: 10px;
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
     }
 
-    nav a {
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
       color: white;
-      margin-right: 10px;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    nav a:hover {
-      color: yellow;
+    nav ul li a:hover {
+      color: #ffcc00;
     }
 
     #destaque {
-      background-color: #003366;
-      padding: 50px;
+      background: url('https://gestaoemsaudeocupacional.com.br/wp-content/uploads/2023/06/mmc-saude-blog-sst-1.png') center/cover no-repeat;
+      padding: 80px 20px;
       text-align: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
     }
 
     section {
-      padding: 20px;
+      padding: 40px 20px;
     }
 
     footer {
-      background-color: darkblue;
+      background-color: #00224d;
+      padding: 20px;
       text-align: center;
-      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>ObraApp</h1>
+    <div class="logo">
+      <img width="200" src="logo.jpg">
+    </div>
     <nav>
-      <a href="index.html">Início</a>
-      <a href="pagina4.html">Trabalhos</a>
-      <a href="pagina2.html">Equipe</a>
-      <a href="pagina3.html">Contatos</a>
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="pagina4.html">Trabalhos</a></li>
+        <li><a href="pagina2.html">Equipe</a></li>
+        <li><a href="pagina3.html">Contatos</a></li>
+      </ul>
     </nav>
   </header>
 
-  <div id="destaque">
-    <h2>Bem-vindo ao ObraApp!</h2>
-    <p>Dicas e informações para sua obra.</p>
-  </div>
+  <section id="destaque">
+    <h1>Bem-vindo ao ObraApp!</h1>
+    <p>Informações úteis, dicas e ajuda para seus projetos.</p>
+  </section>
 
-  <section>
-    <h3>Sobre nós</h3>
-    <p>Conectamos clientes e profissionais da construção civil.</p>
+  <section id="dicas">
+    <h2>Sobre nós</h2>
+    <p>Transformamos a forma como serviços de construção civil são contratados, conectando clientes e profissionais com qualidade e confiança.</p>
   </section>
 
   <footer>
-    <p>© 2025 ObraApp</p>
+    <p>&copy; 2025 ObraApp - Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
